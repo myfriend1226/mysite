@@ -1,7 +1,62 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<h1>Welcome</h1>
+<div id="content"class="cover-container text-white text-center d-flex w-100 h-400 flex-column">
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">AN LE</h1>
+
+    <h2 class="lead">I am a graduate software developer and data scientist</h2>
+    <hr>
+    <p class="lead">
+      <a href="{% url 'about' %}" class="btn btn-primary btn-lg mb-5">Learn more</a>
+    </p>
+    <br><br><br>
+  </main>
+
+</div>
 
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+
+<style>
+body{
+  background: url("https://images.unsplash.com/photo-1508169351866-777fc0047ac5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4225add2e24c60336ef58bfec3fad768&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: center;
+  font-family: lato
+}
+html{
+  height: 100%;
+}
+#content{
+  text-align: center;
+  padding-top: 25%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+
+}
+h1{
+  font-weight: 500 ;
+  color: black;
+  font-size: 5em;
+  color:white;
+
+}
+ h3{
+   color: white;
+ }
+hr{
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+</style>
 {% endblock %}
