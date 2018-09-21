@@ -1,10 +1,6 @@
 from django.db import models
 from django.utils import timezone
 from django.urls import reverse
-# SuperUserInformation
-# User: Jose
-# Email: training@pieriandata.com
-# Password: testpassword
 
 class Post(models.Model):
     TOPIC_CHOICE=(('Data Science','Data Science'),('Web Technology','Web Technology'))
